@@ -34,8 +34,8 @@ namespace TheObjectOfYourAffection
             */
 
             Profile NewUser = new Profile();
-            string result3 = NewUser.ViewProfile();
             NewUser.SetHobbies();
+            string result3 = NewUser.ViewProfile();
 
             //Profile sam = new Profile("New York", "USA", "Sam Drakkila", 18, "He/Him");
             //string result = sam.ViewProfile();
