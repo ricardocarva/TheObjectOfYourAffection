@@ -108,12 +108,17 @@ namespace TheObjectOfYourAffection
                 numHobbiesString = Console.ReadLine();
 
             }
-            for (int i=0; i< numHobbies; i++)
+            //Creates an array of strings to store the hobbies. Size is the number of Hobies
+            string[] hobbiesAnswer = new string[numHobbies];
+            //Capture the hobies from the user
+            for (int i = 0; i < numHobbies; i++)
             {
+                
                 Console.Write($"Enter Hobby Number {i + 1}: ");
-                string hobby = Console.ReadLine();
-                this.hobbies[i] = hobby;
+                hobbiesAnswer[i] = Console.ReadLine();
             }
+            //Associates the hobbies from that user to their answers
+            this.hobbies = hobbiesAnswer;
             
         }
     }
